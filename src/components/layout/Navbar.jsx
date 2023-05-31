@@ -22,6 +22,9 @@ const Navbar = () => {
                 <li>
                     <Link to='/hourse'>Caballos</Link>
                 </li>
+                <li>
+                    <Link to='/social'>Redes sociales</Link>
+                </li>
             </ul>
         </nav>
     )

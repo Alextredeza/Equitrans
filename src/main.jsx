@@ -1,13 +1,13 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-import App from './App.jsx'
-import './index.css'
-
 import { createHashRouter, RouterProvider } from 'react-router-dom';
+
+import './index.css'
 
 import Home from './pages/Home'
 import About from './pages/About'
 import Hourse from './pages/Hourse.jsx';
+import Social from './pages/Social';
 
 const Router = createHashRouter([
   {
@@ -21,6 +21,10 @@ const Router = createHashRouter([
   {
     path: '/hourse',
     element: <Hourse />
+  },
+  {
+    path: '/social',
+    element: <Social />
   }
 ]);
 
