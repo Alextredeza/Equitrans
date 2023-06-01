@@ -48,7 +48,7 @@ const Hourse = () => {
     <Layout>
       <h1
         className='text-4xl font-bold text-center'
-      >Hourse</h1>
+      >Nuestros Caballos a la venta</h1>
       <div
         className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 mt-4'
       >

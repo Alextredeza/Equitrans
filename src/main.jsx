@@ -26,6 +26,7 @@ const Router = createHashRouter([
     path: '/social',
     element: <Social />
   }
+  
 ]);
 
 ReactDOM.createRoot(document.getElementById('root')).render(
