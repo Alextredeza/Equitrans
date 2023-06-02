@@ -75,12 +75,12 @@ function App() {
         </div>
       </div>
       <div
-        className='bg-[#24272e] p-5'
+        className='bg-[#3a3b40] p-5'
         id='services'
       >
         <p
           className='text-2xl font-bold text-center mb-3 bg-gray-300 rounded-md w-1/2 m-auto'
-        >Nuestros camiones</p>
+        >Nuestro Camión</p>
         <div
           className='flex flex-row-reverse gap-2'
         >
@@ -89,13 +89,7 @@ function App() {
             <p
               className='text-white text-sm mt-3'
             >
-              Contamos con vehículos de transporte especialmente diseñados y equipados para ofrecer comodidad y seguridad óptimas. Nuestras modernas unidades están equipadas con sistemas de ventilación, monitoreo de temperatura y suspensión especializada para garantizar un viaje suave y libre de estrés para sus equinos.
-            </p>
-            <p
-              className='text-white text-sm mt-3'
-            >
-              Nuestro equipo de transportistas altamente capacitados posee una amplia experiencia en el manejo de caballos y está comprometido con la seguridad en cada etapa del viaje. Mantenemos una comunicación constante con nuestros clientes, brindando actualizaciones periódicas sobre el progreso del transporte para brindar tranquilidad y confianza.
-              <Link className='text-[#fe2c2c] ml-1' to="about"> LEER MAS</Link>
+             Nuestro camión de transporte de caballos, un Scania gris con un distintivo logo rojo, está diseñado pensando en la comodidad y seguridad de los caballos. Cuenta con comederos estratégicamente ubicados, ventanas para una adecuada ventilación, y cámaras de seguridad en el compartimento de carga. Además, ofrece amplio espacio de almacenamiento para maletines y baúles. Garantizamos un transporte de primera clase, donde el bienestar de los caballos es nuestra máxima prioridad.
             </p>
           </div>
           <div
@@ -117,7 +111,7 @@ function App() {
         <p
           className='text-2xl font-bold text-center mb-3 bg-gray-300 rounded-md w-1/2 m-auto'
         >
-          Contactanos
+          Contáctanos
         </p>
         <div
           className='flex gap-2 max-w-5xl m-auto'
@@ -125,6 +119,9 @@ function App() {
           <div
             className='w-1/2'
           >
+            <br></br>
+            <p className='text-white'>Contacta con nosotros para pode rproporcionarte mas información de lo que necesites, presupuestos, servicios extra y demas informaciones que necesites. </p>
+            <br></br>
             <div className=''>
               <ul
                 className='text-white text-sm mt-3 list-disc'
@@ -132,12 +129,17 @@ function App() {
                 <li
                   className='ml-5'
                 >
-                  <p className='text-white text-sm'>Telefono: 55 1234 5678</p>
+                  <p className='text-white text-sm'>Telefono: 626 309 623</p>
                 </li>
                 <li
                   className='ml-5'
                 >
-                  <p className='text-white text-sm'>Correo: </p>
+                  <p className='text-white text-sm'>Correo: equitrans_andreu@gmail</p>
+                </li>
+                <li
+                  className='ml-5'
+                >
+                  <p className='text-white text-sm'>Redes Sociales: @equitrans_andreu</p>
                 </li>
               </ul>
             </div>
@@ -166,10 +168,11 @@ function App() {
       </div>
       <footer className='bg-slate-500 text-white text-center p-3 mt-auto'>
         <p className='text-sm'>
-          &copy; 2021 - {new Date().getFullYear()} | All Rights Reserved | <a href='https://www.linkedin.com/in/brandon-lee-2a1a6b1a1/' target='_blank' rel='noreferrer'>Brandon Lee</a>
+          &copy; 2021 - {new Date().getFullYear()} | Equitrans_Andreu | <a href='https://www.linkedin.com/in/brandon-lee-2a1a6b1a1/' target='_blank' rel='noreferrer'>Brandon Lee</a>
         </p>
       </footer>
     </div>
+    
   )
 
   return (
