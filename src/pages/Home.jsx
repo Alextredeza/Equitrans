@@ -10,15 +10,13 @@ import Slider from '../components/Slider'
 function App() {
 
   let imagenes = [
-    "https://imgur.com/Kj1wm6O",
+    "https://i.imgur.com/Kj1wm6O.jpg",
     "/img/camion2.jpg",
     "/img/camion3.jpg",
     "/img/camion4.jpg",
   ]
 
   let banner = 'https://www.hospitalveterinariglories.com/wp-content/uploads/2022/11/25-11-22-X-datos-increi%CC%81bles-sobre-los-caballos.jpg'
-
-  let imgconocenos = '/img/camion4.jpg'
 
   let redes = [
     {
@@ -51,10 +49,10 @@ function App() {
       </div>
       <div
         id='about'
-        className='flex gap-2 p-4 bg-[#24272e]'>
-        <div className='w-1/2'>
+        className='flex gap-2 p-4 bg-[#24272e] lg:block'>
+        <div className='w-1/2 lg:w-full'>
           <p
-            className='text-2xl text-[#fe2c2c] font-bold cursor-pointer'
+            className='text-2xl text-[#fe2c2c] font-bold cursor-pointer lg:w-1/2'
           >Sobre nosotros</p>
           <p
             className='text-white text-sm mt-3'
@@ -69,8 +67,11 @@ function App() {
           </p>
         </div>
         <div
-          className='w-1/2'
+          className='w-1/2 grid grid-cols-2 gap-2 lg:grid-cols-4 lg:w-full lg:mt-5'
         >
+          <img src="/img/camion4.jpg" alt="" />
+          <img src="/img/camion4.jpg" alt="" />
+          <img src="/img/camion4.jpg" alt="" />
           <img src="/img/camion4.jpg" alt="" />
         </div>
       </div>
@@ -85,12 +86,20 @@ function App() {
           className='flex flex-row-reverse gap-2'
         >
           <div className='w-1/2'>
-            
+
             <p
               className='text-white text-sm mt-3'
             >
-             Nuestro camión de transporte de caballos, un Scania gris con un distintivo logo rojo, está diseñado pensando en la comodidad y seguridad de los caballos. Cuenta con comederos estratégicamente ubicados, ventanas para una adecuada ventilación, y cámaras de seguridad en el compartimento de carga. Además, ofrece amplio espacio de almacenamiento para maletines y baúles. Garantizamos un transporte de primera clase, donde el bienestar de los caballos es nuestra máxima prioridad.
+              Nuestro camión de transporte de caballos, un Scania gris con un distintivo logo rojo, está diseñado pensando en la comodidad y seguridad de los caballos. Cuenta con comederos estratégicamente ubicados, ventanas para una adecuada ventilación, y cámaras de seguridad en el compartimento de carga. Además, ofrece amplio espacio de almacenamiento para maletines y baúles. Garantizamos un transporte de primera clase, donde el bienestar de los caballos es nuestra máxima prioridad.
             </p>
+            <div
+          className='w-full grid grid-cols-2 gap-2 lg:grid-cols-2 lg:w-full lg:mt-5'
+        >
+          <img src="/img/camion4.jpg" alt="" />
+          <img src="/img/camion4.jpg" alt="" />
+          <img className='hidden lg:block' src="/img/camion4.jpg" alt="" />
+          <img className='hidden lg:block' src="/img/camion4.jpg" alt="" />
+        </div>
           </div>
           <div
             className='w-1/2'
@@ -160,7 +169,7 @@ function App() {
             </div>
           </div>
           <div
-            className='w-1/2'
+            className='w-1/2' dev
           >
             <img src="/img/camion4.jpg" alt="" />
           </div>
@@ -171,70 +180,6 @@ function App() {
           &copy; 2021 - {new Date().getFullYear()} | Equitrans_Andreu | <a href='https://www.linkedin.com/in/brandon-lee-2a1a6b1a1/' target='_blank' rel='noreferrer'>Brandon Lee</a>
         </p>
       </footer>
-    </div>
-    
-  )
-
-  return (
-    <div>
-      <Navbar />
-      <div
-        className='h-40 bg-center bg-no-repeat bg-cover bg-blend-overlay bg-gray-550/95 flex flex-col justify-center items-center'
-        style={{ backgroundImage: `url(${banner})` }}
-      >
-        <h1 className='text-4xl font-bold text-white' >Transporte y Venta de Caballos a nievel profesional</h1>
-      </div>
-      <div className='container m-auto p-3 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3 items-center' >
-        <div
-          className='h-72 bg-center bg-no-repeat bg-cover bg-blend-overlay bg-gray-700/95 flex flex-col justify-center items-center rounded-md'
-          style={{ backgroundImage: `url(${imgconocenos})` }}
-        >
-          <button
-            className='text-white font-bold text-2xl px-4 py-2 rounded-md border-2 border-white hover:bg-gray-300 hover:text-black transition duration-300 ease-in-out transform hover:scale-110 hover:shadow-xl'
-          >
-            CONOCENOS
-          </button>
-        </div>
-        <div
-          className='h-48 bg-center bg-no-repeat bg-cover bg-blend-overlay bg-gray-600/95 flex flex-col justify-center items-center rounded-md text-white font-bold'
-        >
-          <p className='text-2xl'>Contactanos</p>
-          <p className='p-2'>TLF:  626309623 </p>
-          <p>Email:  Equitrans_Andreu@gmail.com</p>
-          <div>
-            <p className='p-2'>Redes sociales:</p>
-            <div className='flex gap-2'>
-              {redes.map((red, i) => {
-                return (
-                  <a
-                    key={i}
-                    href={red.link}
-                    target='_blank'
-                    rel='noreferrer'
-                    className='text-white transition duration-300 ease-in-out transform hover:scale-110 hover:shadow-xl'
-                  >
-                    {red.icon}
-                  </a>
-                )
-              })}
-            </div>
-          </div>
-        </div>
-        <div>
-          <p
-            className='text-2xl font-bold text-center mb-3 bg-gray-300 rounded-md'
-          >
-            Nuestro Camión
-          </p>
-          <div className='max-w-5xl m-auto'>
-            <Slider>
-              {imagenes.map((img, i) => {
-                return <img src={img} alt={`imagen ${i}`} className='rounded-md h-full' />
-              })}
-            </Slider>
-          </div>
-        </div>
-      </div>
     </div>
   )
 }
