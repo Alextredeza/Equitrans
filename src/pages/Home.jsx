@@ -10,7 +10,7 @@ import Slider from '../components/Slider'
 function App() {
 
   let imagenes = [
-    "/img/camion1.png",
+    "https://imgur.com/Kj1wm6O",
     "/img/camion2.jpg",
     "/img/camion3.jpg",
     "/img/camion4.jpg",
