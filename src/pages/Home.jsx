@@ -11,9 +11,9 @@ function App() {
 
   let imagenes = [
     // "https://i.imgur.com/Kj1wm6O.jpg",
-    "/img/camion2.jpg",
-    "/img/camion3.jpg",
-    "/img/camion4.jpg",
+    "/img/prueba8.jpg",
+   // "/img/camion3.jpg",
+   // "/img/camion4.jpg",
   ]
 
   let banner = 'https://www.hospitalveterinariglories.com/wp-content/uploads/2022/11/25-11-22-X-datos-increi%CC%81bles-sobre-los-caballos.jpg'
