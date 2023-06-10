@@ -12,8 +12,8 @@ function App() {
   let imagenes = [
     // "https://i.imgur.com/Kj1wm6O.jpg",
     "/img/prueba8.jpg",
-   // "/img/camion3.jpg",
-   // "/img/camion4.jpg",
+    // "/img/camion3.jpg",
+    // "/img/camion4.jpg",
   ]
 
   let banner = 'https://www.hospitalveterinariglories.com/wp-content/uploads/2022/11/25-11-22-X-datos-increi%CC%81bles-sobre-los-caballos.jpg'
@@ -127,7 +127,16 @@ function App() {
         <p className='text-2xl font-bold text-center mb-3 bg-gray-300 rounded-md w-1/2 m-auto' >
           Esquilado
         </p>
-        <div className='flex flex-row-reverse gap-2 max-w-5xl m-auto' >
+        <div className='max-w-5xl m-auto flex'>
+          <div className='w-[calc(100%_-_25rem)]' >
+            <p className='text-white bg-gray-600/60 rounded-lg p-3 h-full'>Contacta con<br></br> nosotros para pode rproporcionarte mas información de lo que necesites, presupuestos, servicios extra y demas informaciones que necesites. </p>
+          </div>
+          <div className='w-[25rem] pl-12'>
+            <img className='w-[200px] rounded-md p-1' src="/img/camion4.jpg" alt="" />
+            <img className='w-[200px] rounded-md p-1' src="/img/camion4.jpg" alt="" />
+          </div>
+        </div>
+        {/* <div className='flex flex-row-reverse gap-2 max-w-5xl m-auto' >
           <div className='w-full flex flex-col justify-center items-center' >
             <p className='text-white bg-gray-600/60 rounded-lg p-3 w-1/2 '>Contacta con<br></br> nosotros para pode rproporcionarte mas información de lo que necesites, presupuestos, servicios extra y demas informaciones que necesites. </p>
           </div>
@@ -135,7 +144,7 @@ function App() {
             <img className='w-[200px] rounded-md p-1' src="/img/camion4.jpg" alt="" />
             <img className='w-[200px] rounded-md p-1' src="/img/camion4.jpg" alt="" />
           </div>
-        </div>
+        </div> */}
       </div>
       <footer className='bg-slate-500 text-white text-center p-3 mt-auto'>
         <p className='text-sm'>
